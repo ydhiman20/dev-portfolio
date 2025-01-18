@@ -1,21 +1,33 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bruno+Ace&family=Bruno+Ace+SC&family=Bungee+Tint&family=Michroma&family=Press+Start+2P&family=Zen+Dots&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.flare {
+  position: fixed;
+  border: 2px solid #ffffff2b;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999 !important ;
+  backdrop-filter: blur(1px);
+  background-color: #0000005e;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  cursor: none !important; /* Let's hide the default cursor so it looks way better */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* We need to remove this custom cursor in mobile devices */
+@media screen and (max-width: 768px) {
+  .flare {
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.flare.pointer {
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
 }
