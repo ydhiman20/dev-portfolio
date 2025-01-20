@@ -14,18 +14,18 @@ function TimeLine() {
   ];
 
   return (
-    <div className="mx-auto relative">
+    <div className="mx-auto relative pl-3">
       {/* Center Line */}
       <div className="absolute left-1/2 transform -translate-x-1/2 dark:border-gray-900 h-full"></div>
 
       <ol className="relative border-s border-gray-200 dark:border-gray-700">
         {TimeLineData.map((item, index) => (
-          <li key={index} className="mb-16 ms-4">
-            <div className="absolute w-3 h-3 bg-amber-200 rounded-full mt-1.5 -start-1.5 dark:border-gray-900 dark:bg-gray-700"></div>
+          <li key={index} className="mb-14 ms-4 pl-6">
+            <div className="loader absolute w-6 h-6 bg-primary rounded-full mt-0 -start-3 dark:border-gray-900 dark:bg-gray-700"></div>
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               {item.duration}
             </time>
-            <h3 className="text-2xl md:text-3xl py-2 font-semibold dark:text-white">
+            <h3 className="text-2xl md:text-2xl py-2 font-semibold dark:text-white">
               {item.title}
             </h3>
             <h3 className="md:text-lg font-semibold dark:text-white">
@@ -36,9 +36,7 @@ function TimeLine() {
               {item.skills.map((skill, idx) => (
                 <span
                   key={idx}
-                  className={`font-semibold ${
-                    gradientColors[idx % gradientColors.length]
-                  } rounded-full text-gray-700 text-sm mr-2 px-4 py-2 mb-2 dark:text-black`}
+                  className="border border-[#e2e2e2] text-base rounded-full mr-2 px-8 py-2 mb-2"
                 >
                   {skill}
                 </span>

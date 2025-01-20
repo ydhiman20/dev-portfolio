@@ -17,30 +17,44 @@ module.exports = {
       btnGradient: {
         bg: "bg-gradient-to-tr from-amber-200 to-yellow-300",
       },
+      padding: {
+        btn: "11rem 1.5rem", // Custom button padding (top-bottom: 1rem, left-right: 1.5rem)
+      },
       backgroundColor: {
-        primary: "#ff3d00", // Custom primary color (dark blue)
-        secondary: "#ffcd42", // Custom secondary color (amber)
-        accent: "#14B8A6", // Custom accent color (teal)
+        primary: "#2c2c2c", // Custom primary color (dark blue)
+        secondary: "#c6c3e1", // Custom secondary color (amber)
+        accent: "#2d2a2b", // Custom accent color (teal)
       },
       colors: {
         ...colors,
         primary: {
-          DEFAULT: "#ff3d00", // Primary button base color (e.g., blue)
+          DEFAULT: "#2c2c2c", // Primary button base color (e.g., blue)
           hover: "#ffcd42", // Darker shade for hover state
           active: "#e879f9", // Even darker shade for active state
         },
       },
+      animation: {
+        spin360: "spin360 1s linear infinite", // Custom animation for full-circle rotation
+      },
+      keyframes: {
+        spin360: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
       fontSize: {
-        sm: ["0.8rem", "0.8rem"],
-        base: ["1.2rem", "1.4rem"],
-        xl: ["1rem", "1.2rem"],
-        "2xl": ["1.2rem", "1.6rem"],
-        "3xl": ["2rem", "2.5rem"],
-        "4xl": ["3rem", "3.5rem"],
-        "5xl": ["4.5rem", "5rem"],
+        sm: ["0.8rem", "1rem", "-0.02em"], // Small letter-spacing (tight)
+        base: ["1em", "1.5rem", "-0.01em"], // Slightly tight spacing
+        xl: ["1.5rem", "2", "0"], // Neutral spacing
+        "2xl": ["2em", "2.5rem", "0.01em"], // Slightly wide spacing
+        "3xl": ["3rem", "3.5rem", "0.02em"], // Wider spacing
+        "4xl": ["4rem", "4.5rem", "0.03em"], // Even wider spacing
+        "5xl": ["5rem", "5.5rem", "0.04em"], // Wide letter-spacing
+        "6xl": ["6rem", "6.5rem", "0.05em"], // Very wide letter-spacing
+        "7xl": ["7rem", "7.5rem", "0.06em"], // Extra wide letter-spacing
       },
       fontFamily: {
-        sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

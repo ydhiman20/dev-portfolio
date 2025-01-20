@@ -18,6 +18,9 @@ export const metadata = {
     "Tailwind CSS",
     "Next.js",
   ],
+  icons: {
+    icon: "/favicon.ico",
+  },
   author: "Yogesh D",
   robots: "index, follow",
 };
@@ -25,10 +28,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="h-dvh bg-[#08233b] text-[#dce5ee]">
+      <link
+        href="/favicon-96x96.png"
+        rel="icon"
+        sizes="96x96"
+        type="image/png"
+      />
+      <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+      <link href="/favicon.ico" rel="shortcut icon" />
+      <link
+        href="/apple-touch-icon.png"
+        rel="apple-touch-icon"
+        sizes="180x180"
+      />
+      <meta content="YD portfolio" name="apple-mobile-web-app-title" />
+      <link href="/site.webmanifest" rel="manifest" />
+      <body className="h-dvh">
         <ThemeProvider attribute="class">
           <Header />
-          <div className="pb-14 pt-14 px-6">{children}</div>
+          <div className="pt-14">{children}</div>
           <Footer />
         </ThemeProvider>
       </body>

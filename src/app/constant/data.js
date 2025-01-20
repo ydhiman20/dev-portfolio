@@ -3,27 +3,32 @@ export const headerLinks = [
   {
     title: "Timeline",
     alt: "timeline",
+    target: "",
     href: "/timeline", // Placeholder link, replace with the actual URL
   },
   {
     title: "Projects",
     alt: "projects",
+    target: "",
     href: "/projects", // Placeholder link, replace with the actual URL
   },
   {
     title: "About",
     alt: "about",
+    target: "",
     href: "/about", // Placeholder link, replace with the actual URL
   },
   {
     title: "Contact",
     alt: "contact",
+    target: "",
     href: "/contact", // Placeholder link, replace with the actual URL
   },
   {
     title: "Resume",
     alt: "Resume",
-    href: "#", // Placeholder link, replace with the actual URL
+    target: "_blank",
+    href: process.env.CV_LINK, // Placeholder link, replace with the actual URL
   },
 ];
 
@@ -32,22 +37,26 @@ export const socialLinks = [
   {
     src: "facebook-icon.svg",
     alt: "Facebook",
-    href: "#", // Placeholder link, replace with the actual URL
+    target: "_blank",
+    href: process.env.FACEBOOK_LINK, // Placeholder link, replace with the actual URL
   },
   {
     src: "twitter-icon.svg",
     alt: "Twitter",
-    href: "#", // Placeholder link, replace with the actual URL
+    target: "_blank",
+    href: process.env.TWITTER_LINK, // Placeholder link, replace with the actual URL
   },
   {
     src: "linkedin-icon.svg",
     alt: "LinkedIn",
-    href: "#", // Placeholder link, replace with the actual URL
+    target: "_blank",
+    href: process.env.LINKDIN_LINK, // Placeholder link, replace with the actual URL
   },
   {
     src: "github-icon.svg",
     alt: "GitHub",
-    href: "#", // Placeholder link, replace with the actual URL
+    target: "_blank",
+    href: process.env.GITHUB_LINK, // Placeholder link, replace with the actual URL
   },
 ];
 
@@ -58,42 +67,42 @@ export const contactDetails = {
 
 export const projectData = [
   {
-    title: "Lorem Ipsum Project 1",
+    title: "Project 1",
     tech: ["Lorem", "Ipsum", "Dolor"],
     githubLink: "https://github.com/username/lorem-ipsum-1",
     url: "https://lorem-ipsum-1.com",
     src: "placeholder.png",
   },
   {
-    title: "Lorem Ipsum Project 2",
+    title: "Project 2",
     tech: ["Sit", "Amet", "Consectetur"],
     githubLink: "https://github.com/username/lorem-ipsum-2",
     url: "https://lorem-ipsum-2.com",
     src: "placeholder.png",
   },
   {
-    title: "Lorem Ipsum Project 3",
+    title: "Project 3",
     tech: ["Adipiscing", "Elit", "Tempor"],
     githubLink: "https://github.com/username/lorem-ipsum-3",
     url: "https://lorem-ipsum-3.com",
     src: "placeholder.png",
   },
   {
-    title: "Lorem Ipsum Project 4",
+    title: "Project 4",
     tech: ["Eiusmod", "Incididunt", "Labore"],
     githubLink: "https://github.com/username/lorem-ipsum-4",
     url: "https://lorem-ipsum-4.com",
     src: "placeholder.png",
   },
   {
-    title: "Lorem Ipsum Project 5",
+    title: "Project 5",
     tech: ["Dolore", "Magna", "Aliqua"],
     githubLink: "https://github.com/username/lorem-ipsum-5",
     url: "https://lorem-ipsum-5.com",
     src: "placeholder.png",
   },
   {
-    title: "Lorem Ipsum Project 6",
+    title: "Project 6",
     tech: ["Ut", "Enim", "Minim"],
     githubLink: "https://github.com/username/lorem-ipsum-6",
     url: "https://lorem-ipsum-6.com",
@@ -191,7 +200,7 @@ export const techSkills = [
 
 export const ABOUT_CONTENT = {
   avatarAlt: "Profile Image",
-  greeting: "Hi, I’m Yogesh Dhiman",
+  greeting: "Hi, I’m YD",
   title: "Frontend",
   typeAnimation: "Developer & Visual Designer",
   description:

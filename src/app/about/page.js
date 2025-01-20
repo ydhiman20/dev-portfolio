@@ -32,7 +32,7 @@ function Page() {
           width={800}
         />
 
-        <p className="mb-20 mt-8 max-w-[700px] m-auto text-center leading-6">
+        <p className="mb-20 mt-8 max-w-[700px] m-auto text-justify leading-8">
           {ABOUT_PAGE_CONTENT.aboutDescription}
         </p>
       </div>
@@ -50,14 +50,14 @@ function Page() {
           {techSkills.map((section, sectionIndex) => (
             <div key={sectionIndex} className="w-full space-y-6">
               <div className="z-[1] md:p-8 space-y-2 md:space-y-0 md:flex md:items-center relative overflow-hidden">
-                <div className="md:w-[15%] text-white">
-                  <span className="font-outfit text-2xl md:text-3xl font-medium">
+                <div className="md:w-[15%]">
+                  <span className="font-outfit text-xl md:text-2xl font-medium">
                     {section.index}
                   </span>
                 </div>
-                <div className="md:w-[40%] text-white">
-                  <i className={`${section.icon} text-2xl md:text-3xl`}></i>
-                  <h3 className="inline-flex md:pl-3 font-outfit font-medium text-2xl md:text-3xl">
+                <div className="md:w-[40%]">
+                  <i className={`${section.icon} text-xl md:text-3xl`}></i>
+                  <h3 className="inline-flex md:pl-3 font-outfit font-medium text-2xl md:text-2xl">
                     {section.title}
                   </h3>
                 </div>
@@ -65,12 +65,7 @@ function Page() {
                   {section.skills.map((skill, idx) => (
                     <span
                       key={idx}
-                      className={`font-semibold ${
-                        gradientColors[
-                          (sectionIndex * section.skills.length + idx) %
-                            gradientColors.length
-                        ]
-                      } rounded-full text-gray-700 text-sm mr-2 px-4 py-2 mb-2`}
+                      className="border border-[#e2e2e2] text-base rounded-full mr-2 px-8 py-2 mb-4"
                     >
                       {skill}
                     </span>

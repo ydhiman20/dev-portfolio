@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-
 import Button from "./Button";
 import avatar from "../../../public/assets/profile-image.svg";
 import { ABOUT_CONTENT } from "../constant/data";
@@ -21,13 +20,13 @@ function HomeAbout() {
       </div>
 
       {/* Greeting */}
-      <h1 className="font-bold md:text-2xl mt-4 dark:text-white">
+      <h1 className="font-bold knewave-regular md:text-2xl -tracking-[0.1rem] mt-4">
         {ABOUT_CONTENT.greeting}
       </h1>
 
       {/* Title with Animation */}
-      <h2 className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent md:text-5xl text-3xl mt-3 font-bold max-w-[1000px]">
-        {ABOUT_CONTENT.title}
+      <h2 className="text-theme md:text-7xl -tracking-[0.5rem] text-3xl mt-3 font-bold max-w-[1000px]">
+        {ABOUT_CONTENT.title} {""}
         <TypeAnimation
           cursor
           repeat={Infinity}
@@ -48,7 +47,7 @@ function HomeAbout() {
       </Button>
 
       {/* Divider */}
-      <hr className="dark:border-[#08233b] border-solid border-[#072844] border-[1px] w-full mt-20 mb-20" />
+      <hr className="mt-20 mb-20 border-solid border-gray-800" />
     </section>
   );
 }

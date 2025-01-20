@@ -16,7 +16,7 @@ function ProjectCard({ item, index }) {
         />
 
         {/* Project Info */}
-        <div className=" absolute inset-0 bg-gray-500 bg-opacity-75 backdrop-blur text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+        <div className=" absolute inset-0 bg-[#2c2c2c]  text-white flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
           <div className=" mb-4  absolute left-5 bottom-2">
             <h3 className="text-base leading-3 mb-4 font-bold">{item.title}</h3>
             <p className="text-sm mt-2">{item.tech.join(", ")}</p>
