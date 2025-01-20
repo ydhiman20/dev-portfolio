@@ -28,25 +28,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link
-        href="/favicon-96x96.png"
-        rel="icon"
-        sizes="96x96"
-        type="image/png"
-      />
-      <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
-      <link href="/favicon.ico" rel="shortcut icon" />
-      <link
-        href="/apple-touch-icon.png"
-        rel="apple-touch-icon"
-        sizes="180x180"
-      />
-      <meta content="YD portfolio" name="apple-mobile-web-app-title" />
-      <link href="/site.webmanifest" rel="manifest" />
       <body className="h-dvh">
         <ThemeProvider attribute="class">
           <Header />
-          <div className="pt-14">{children}</div>
+          <div className="pt-14 px-4 md:px-0">{children}</div>
           <Footer />
         </ThemeProvider>
       </body>

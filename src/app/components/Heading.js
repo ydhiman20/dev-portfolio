@@ -1,7 +1,7 @@
 function Heading({ heading, subHeading }) {
   return (
     <div className="text-center max-w-screen-md m-auto">
-      <h2 className="text-theme text-3xl md:text-4xl font-bold -tracking-[0.3rem]">
+      <h2 className="text-theme text-3xl md:text-4xl font-bold md:-tracking-[0.3rem] -tracking-[0.2rem] dark:text-white">
         {heading}
       </h2>
       {subHeading && (

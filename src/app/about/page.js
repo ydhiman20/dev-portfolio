@@ -32,12 +32,12 @@ function Page() {
           width={800}
         />
 
-        <p className="mb-20 mt-8 max-w-[700px] m-auto text-justify leading-8">
+        <p className="mb-20 mt-8 max-w-[700px] m-auto text-justify md:leading-8 leading-7 dark:text-white">
           {ABOUT_PAGE_CONTENT.aboutDescription}
         </p>
       </div>
 
-      <hr className="dark:border-[#08233b] border-[solid] border-[#072844] border-[1px] w-full mx-[0] mt-20 mb-20" />
+      <hr className="mt-20 mb-20 border-bottom" />
 
       {/* Tech Stack Section */}
       <Heading
@@ -48,16 +48,19 @@ function Page() {
       <div>
         <div className="w-full flex flex-wrap space-y-6 lg:space-y-0">
           {techSkills.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="w-full space-y-6">
-              <div className="z-[1] md:p-8 space-y-2 md:space-y-0 md:flex md:items-center relative overflow-hidden">
+            <div
+              key={sectionIndex}
+              className={`w-full space-y-6 p-5 md:p-2 
+                 ${sectionIndex % 2 ? "bg-gray-50 dark:bg-[#2c2c2c]" : ""}`}
+            >
+              <div className="z-[1] md:p-8 space-y-2 md:space-y-0 md:flex md:items-top relative overflow-hidden">
                 <div className="md:w-[15%]">
-                  <span className="font-outfit text-xl md:text-2xl font-medium">
+                  <span className="font-outfit text-xl md:text-2xl dark:text-white">
                     {section.index}
                   </span>
                 </div>
                 <div className="md:w-[40%]">
-                  <i className={`${section.icon} text-xl md:text-3xl`}></i>
-                  <h3 className="inline-flex md:pl-3 font-outfit font-medium text-2xl md:text-2xl">
+                  <h3 className="inline-flex md:pl-3 pb-3 md:-pb-0 font-outfit font-medium text-2xl md:text-2xl dark:text-white">
                     {section.title}
                   </h3>
                 </div>
@@ -65,7 +68,7 @@ function Page() {
                   {section.skills.map((skill, idx) => (
                     <span
                       key={idx}
-                      className="border border-[#e2e2e2] text-base rounded-full mr-2 px-8 py-2 mb-4"
+                      className="border border-[#e2e2e2] text-base rounded-full mr-2 px-8 py-2 mb-4 dark:text-white"
                     >
                       {skill}
                     </span>

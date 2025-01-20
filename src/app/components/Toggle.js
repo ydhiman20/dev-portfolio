@@ -4,7 +4,7 @@ import { LuMoon } from "react-icons/lu";
 import { LuSun } from "react-icons/lu";
 import { useTheme } from "next-themes";
 
-const DarkModeToggle = () => {
+function DarkModeToggle() {
   const { theme, setTheme } = useTheme();
 
   const [mounted, setMounted] = useState(false);
@@ -31,6 +31,6 @@ const DarkModeToggle = () => {
       )}
     </button>
   );
-};
+}
 
 export default DarkModeToggle;

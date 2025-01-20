@@ -8,7 +8,7 @@ import { ABOUT_CONTENT } from "../constant/data";
 
 function HomeAbout() {
   return (
-    <section className="flex flex-col items-center text-center pt-16 justify-center">
+    <section className="flex flex-col items-center text-center pt-16 justify-center dark:text-white">
       {/* Avatar */}
       <div className="animate-bounce">
         <Image
@@ -25,7 +25,7 @@ function HomeAbout() {
       </h1>
 
       {/* Title with Animation */}
-      <h2 className="text-theme md:text-7xl -tracking-[0.5rem] text-3xl mt-3 font-bold max-w-[1000px]">
+      <h2 className="text-theme md:text-7xl md:-tracking-[0.5rem] -tracking-[0.2rem] text-3xl mt-3 font-bold max-w-[1000px] dark:text-white">
         {ABOUT_CONTENT.title} {""}
         <TypeAnimation
           cursor
@@ -47,7 +47,7 @@ function HomeAbout() {
       </Button>
 
       {/* Divider */}
-      <hr className="mt-20 mb-20 border-solid border-gray-800" />
+      <hr className="mt-20 mb-20 border-b-stone-200 block w-full dark:border-b-stone-200" />
     </section>
   );
 }

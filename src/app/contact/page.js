@@ -37,7 +37,7 @@ const Page = () => {
             <div>
               <input
                 required
-                className="mt-1 block w-full px-8 py-5 rounded-full border"
+                className="mt-1 block w-full px-8 md:py-5 py-3 rounded-full border"
                 name="name"
                 onChange={handleChange}
                 placeholder="Name"
@@ -49,7 +49,7 @@ const Page = () => {
             <div>
               <input
                 required
-                className="mt-1 block w-full px-8 py-5 rounded-full border"
+                className="mt-1 block w-full px-8 md:py-5 py-3 rounded-full border"
                 name="email"
                 onChange={handleChange}
                 placeholder="Email"
@@ -61,7 +61,7 @@ const Page = () => {
             <div>
               <textarea
                 required
-                className="mt-1 block w-full px-8 py-5 rounded-full border"
+                className="mt-1 block w-full px-8 md:py-5 py-3 rounded-full border"
                 name="message"
                 onChange={handleChange}
                 placeholder="Message..."

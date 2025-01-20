@@ -24,7 +24,7 @@ function Footer() {
               <li key={index} className="px-1">
                 <Link
                   aria-label={item.alt}
-                  className="w-16  h-16 border flex items-center justify-center rounded-full"
+                  className="md:w-16 md:h-16 w-10 h-10 border flex items-center justify-center rounded-full"
                   href={item.href}
                   target={item.target}
                 >

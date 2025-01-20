@@ -24,11 +24,20 @@ function ProjectCard({ item, index }) {
 
           {/* Links */}
           <div className="project-link flex gap-4 absolute right-5 top-5">
-            <Link href={item.githubLink} target="_blank">
+            <Link
+              className="w-12 h-12 rounded-full border flex items-center justify-center"
+              href={item.githubLink}
+              target="_blank"
+            >
               <FaGithub size={22} />
             </Link>
 
-            <Link href={`/projects/${item.slug}`} size={30} target="_blank">
+            <Link
+              className="w-12 h-12 rounded-full border flex items-center justify-center"
+              href={`/projects/${item.slug}`}
+              size={30}
+              target="_blank"
+            >
               <FaGlobe size={20} />
             </Link>
           </div>
