@@ -1,7 +1,7 @@
-"use client";
+// "use client";
 
 import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 
 import avatar from "../../../public/assets/profile-image.svg";
 import { ABOUT_CONTENT } from "../constant/data";
@@ -28,13 +28,13 @@ function HomeAbout() {
       {/* Title with Animation */}
       <h2 className="text-theme md:text-7xl md:-tracking-[0.5rem] -tracking-[0.2rem] text-3xl mt-3 font-bold max-w-[1000px] dark:text-white">
         {ABOUT_CONTENT.title} {""}
-        <TypeAnimation
+        {/* <TypeAnimation
           cursor
           repeat={Infinity}
           sequence={[ABOUT_CONTENT.typeAnimation, 100]}
           speed={10}
           wrapper="span"
-        />
+        /> */}
       </h2>
 
       {/* Description */}
