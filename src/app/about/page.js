@@ -1,20 +1,9 @@
-import Heading from "../components/Heading";
 import Image from "next/image";
+
+import Heading from "../components/Heading";
 import { ABOUT_PAGE_CONTENT, techSkills } from "../constant/data";
 
 function Page() {
-  // Array of gradient colors to assign different colors dynamically
-  const gradientColors = [
-    "bg-gradient-to-tr from-pink-200 to-pink-400",
-    "bg-gradient-to-tr from-blue-200 to-blue-400",
-    "bg-gradient-to-tr from-green-200 to-green-400",
-    "bg-gradient-to-tr from-yellow-200 to-yellow-400",
-    "bg-gradient-to-tr from-purple-200 to-purple-400",
-    "bg-gradient-to-tr from-teal-200 to-teal-400",
-    "bg-gradient-to-tr from-red-200 to-red-400",
-    "bg-gradient-to-tr from-orange-200 to-orange-400",
-  ];
-
   return (
     <div className="container m-auto">
       <div className="min-h-[400px]">
@@ -37,7 +26,7 @@ function Page() {
         </p>
       </div>
 
-      <hr className="mt-20 mb-20 border-bottom" />
+      <hr className="mt-20 mb-20 dark:border-[#282828]" />
 
       {/* Tech Stack Section */}
       <Heading
@@ -50,8 +39,8 @@ function Page() {
           {techSkills.map((section, sectionIndex) => (
             <div
               key={sectionIndex}
-              className={`w-full space-y-6 p-5 md:p-2 
-                 ${sectionIndex % 2 ? "bg-gray-50 dark:bg-[#2c2c2c]" : ""}`}
+              className={`w-full space-y-6 p-5 md:p-2 border-b dark:border-[#282828] last:bottom-b-0
+                 ${sectionIndex % 2 ? "" : ""}`}
             >
               <div className="z-[1] md:p-8 space-y-2 md:space-y-0 md:flex md:items-top relative overflow-hidden">
                 <div className="md:w-[15%]">

@@ -1,18 +1,6 @@
 import { TimeLineData } from "../constant/data";
 
 function TimeLine() {
-  // Array of gradient colors for chips
-  const gradientColors = [
-    "bg-gradient-to-tr from-pink-200 to-pink-400",
-    "bg-gradient-to-tr from-blue-200 to-blue-400",
-    "bg-gradient-to-tr from-green-200 to-green-400",
-    "bg-gradient-to-tr from-purple-200 to-purple-400",
-    "bg-gradient-to-tr from-yellow-200 to-yellow-400",
-    "bg-gradient-to-tr from-orange-200 to-orange-400",
-    "bg-gradient-to-tr from-teal-200 to-teal-400",
-    "bg-gradient-to-tr from-red-200 to-red-400",
-  ];
-
   return (
     <div className="mx-auto relative pl-3">
       {/* Center Line */}

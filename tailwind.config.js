@@ -1,7 +1,7 @@
+const colors = require("tailwindcss/colors");
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
-const colors = require("tailwindcss/colors");
 module.exports = {
   darkMode: "class",
   content: [
@@ -21,14 +21,14 @@ module.exports = {
         btn: "11rem 1.5rem", // Custom button padding (top-bottom: 1rem, left-right: 1.5rem)
       },
       backgroundColor: {
-        primary: "#2c2c2c", // Custom primary color (dark blue)
-        secondary: "#c6c3e1", // Custom secondary color (amber)
-        accent: "#2d2a2b", // Custom accent color (teal)
+        primary: "#000000", // Custom primary color (dark blue)
+        secondary: "#ffcd42", // Custom secondary color (amber)
+        accent: "#e879f9", // Custom accent color (teal)
       },
       colors: {
         ...colors,
         primary: {
-          DEFAULT: "#2c2c2c", // Primary button base color (e.g., blue)
+          DEFAULT: "#000000", // Primary button base color (e.g., blue)
           hover: "#ffcd42", // Darker shade for hover state
           active: "#e879f9", // Even darker shade for active state
         },

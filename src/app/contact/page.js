@@ -1,12 +1,13 @@
 "use client";
 
-import Heading from "../components/Heading";
 import { useState } from "react";
+
+import Heading from "../components/Heading";
 const Page = () => {
   const [formData, setFormData] = useState({
-    name: "",
     email: "",
     message: "",
+    name: "",
   });
 
   const handleChange = (e) => {
@@ -36,11 +37,11 @@ const Page = () => {
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <input
-                required
                 className="mt-1 block w-full px-8 md:py-5 py-3 rounded-full border"
                 name="name"
                 onChange={handleChange}
                 placeholder="Name"
+                required
                 type="text"
                 value={formData.name}
               />
@@ -48,11 +49,11 @@ const Page = () => {
 
             <div>
               <input
-                required
                 className="mt-1 block w-full px-8 md:py-5 py-3 rounded-full border"
                 name="email"
                 onChange={handleChange}
                 placeholder="Email"
+                required
                 type="email"
                 value={formData.email}
               />
@@ -60,11 +61,11 @@ const Page = () => {
 
             <div>
               <textarea
-                required
                 className="mt-1 block w-full px-8 md:py-5 py-3 rounded-full border"
                 name="message"
                 onChange={handleChange}
                 placeholder="Message..."
+                required
                 rows="4"
                 value={formData.message}
               />

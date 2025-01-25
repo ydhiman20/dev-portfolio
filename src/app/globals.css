@@ -5,19 +5,19 @@
 @tailwind utilities;
 
 body {
-  @apply text-[#2c2c2c];
+  @apply text-[#000000];
 }
 
 .btn-theme {
-  @apply bg-[#2c2c2c] text-white drop-shadow-2xl;
+  @apply bg-[#000000] text-white drop-shadow-2xl;
 }
 
 .text-theme {
-  @apply text-[#2c2c2c];
+  @apply text-[#000000];
 }
 
 .btn-theme-cta {
-  @apply bg-[#ffbd5d] text-white drop-shadow-2xl hover:scale-110 transition duration-300;
+  @apply bg-[#ffbd5d] text-white drop-shadow-2xl hover:scale-110 transition duration-300 dark:text-black;
 }
 
 .knewave-regular {

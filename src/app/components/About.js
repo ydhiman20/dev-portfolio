@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import Button from "./Button";
+
 import avatar from "../../../public/assets/profile-image.svg";
 import { ABOUT_CONTENT } from "../constant/data";
+import Button from "./Button";
 
 function HomeAbout() {
   return (
@@ -47,7 +48,7 @@ function HomeAbout() {
       </Button>
 
       {/* Divider */}
-      <hr className="mt-20 mb-20 border-b-stone-200 block w-full dark:border-b-stone-200" />
+      <hr className="mt-20 mb-20 border-b-stone-200 block w-full dark:border-[#282828]" />
     </section>
   );
 }

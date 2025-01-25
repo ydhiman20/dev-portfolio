@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-function ProjectCard({ item, index }) {
+function ProjectCard({ index, item }) {
   return (
     <>
       <div className="group relative overflow-hidden rounded-lg">

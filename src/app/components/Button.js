@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 
-function Button({ children, icon = false, href }) {
+function Button({ children, href, icon = false }) {
   return (
     <Link
       className={`btn-theme hover:scale-110 transition duration-300 ease-in-out text-sm font-semibold md:py-7 py-5 px-10 rounded-full hover:bg-opacity-85 uppercase text-white dark:text-black dark:bg-[#ffbd5d] ${

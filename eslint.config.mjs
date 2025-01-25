@@ -1,53 +1,52 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next"),
+import pluginJs from "@eslint/js";
+import perfectionist from "eslint-plugin-perfectionist";
+import react from "eslint-plugin-react";
+import globals from "globals";
+/** @type {import('eslint').Linter.Config[]} */
+export default [
+  pluginJs.configs.recommended,
   {
-    ignores: [".next", "tailwind.config.mjs", ""], // Ignore the .next directory
+    ignores: [
+      ".next/", // Exclude the entire .next folder
+      "tailwind.config.mjs",
+      "tailwind.config.js",
+      "postcss.config.js",
+      "dist/",
+    ],
   },
   {
-    rules: {
-      camelcase: ["error"],
-      "sort-vars": "error",
-      "prefer-const": "error",
-      "prefer-destructuring": [
-        "error",
-        {
-          array: true,
-          object: true,
+    files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        process: "readonly", // Add `process` as a global variable
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
         },
-      ],
-      "no-useless-assignment": "error",
-      eqeqeq: ["error", "always"],
-      curly: ["error", "all"],
-      semi: ["error", "always"],
-      "no-useless-escape": "error",
-      "no-undefined": "error",
-      "no-console": "error",
-      "no-alert": "error",
-      "no-multi-spaces": ["error"],
-      "no-unused-expressions": ["error", { enforceForJSX: true }],
+        sourceType: "module",
+      },
+    },
 
-      // React specific prop sorting rule
-      "react/jsx-sort-props": [
+    plugins: {
+      perfectionist,
+      react,
+    },
+    rules: {
+      "no-undef": "warn",
+      "no-undef-init": "error",
+      "no-unused-vars": "warn",
+
+      "perfectionist/sort-objects": [
         "error",
         {
-          shorthandFirst: true, // Shorthand props come before regular props
-          ignoreCase: false, // Case-sensitive sorting
-          reservedFirst: true, // Ensure reserved props like ref, key come first
+          type: "alphabetical",
         },
       ],
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      semi: "error",
     },
   },
 ];
-
-export default eslintConfig;

@@ -1,17 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    dirs: ["pages", "utils", "app"], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
+  },
   images: {
     remotePatterns: [
       {
-        protocol: "https",
         hostname: "picsum.photos",
-        port: "",
         pathname: "/**", // Allow any path from picsum.photos
+        port: "",
+        protocol: "https",
       },
     ],
-  },
-  eslint: {
-    dirs: ["pages", "utils", "app"], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
   },
 };
 

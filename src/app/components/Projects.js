@@ -1,7 +1,7 @@
+import { projectData } from "../constant/data";
 import Button from "./Button";
 import Heading from "./Heading";
 import ProjectCard from "./ProjectCard";
-import { projectData } from "../constant/data";
 
 function Projects() {
   return (

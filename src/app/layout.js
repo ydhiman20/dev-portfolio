@@ -1,11 +1,17 @@
 import "./globals.css";
+
+import { ThemeProvider } from "next-themes";
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { ThemeProvider } from "next-themes";
+
 export const metadata = {
-  title: "Yogesh D | Developer Portfolio",
+  author: "Yogesh D",
   description:
     "Welcome to my developer portfolio! Explore my projects, skills, and experience in frontend development, UI/UX design, and more.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   keywords: [
     "Yogesh D",
     "Developer Portfolio",
@@ -18,11 +24,8 @@ export const metadata = {
     "Tailwind CSS",
     "Next.js",
   ],
-  icons: {
-    icon: "/favicon.ico",
-  },
-  author: "Yogesh D",
   robots: "index, follow",
+  title: "Yogesh D | Developer Portfolio",
 };
 
 export default function RootLayout({ children }) {
