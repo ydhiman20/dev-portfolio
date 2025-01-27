@@ -209,7 +209,7 @@ export const ABOUT_CONTENT = {
   description:
     "Currently focused on crafting user experiences that inspire engagement and drive growth.",
   greeting: "Hi, I’m YD",
-  title: "Frontend Developer & Visual Designer",
+  title: "Frontend",
   typeAnimation: "Developer & Visual Designer",
 };
 
