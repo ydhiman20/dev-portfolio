@@ -1,4 +1,4 @@
-import "dotenv/config";
+// import "dotenv/config";
 
 // Header Configuration
 export const headerLinks = [
@@ -40,25 +40,25 @@ export const headerLinks = [
 export const socialLinks = [
   {
     alt: "Facebook",
-    href: process.env.FACEBOOK_LINK, // Placeholder link, replace with the actual URL
+    href: "process.env.FACEBOOK_LINK", // Placeholder link, replace with the actual URL
     src: "facebook-icon.svg",
     target: "_blank",
   },
   {
     alt: "Twitter",
-    href: process.env.TWITTER_LINK, // Placeholder link, replace with the actual URL
+    href: "process.env.TWITTER_LINK", // Placeholder link, replace with the actual URL
     src: "twitter-icon.svg",
     target: "_blank",
   },
   {
     alt: "LinkedIn",
-    href: process.env.LINKDIN_LINK, // Placeholder link, replace with the actual URL
+    href: "process.env.LINKDIN_LINK", // Placeholder link, replace with the actual URL
     src: "linkedin-icon.svg",
     target: "_blank",
   },
   {
     alt: "GitHub",
-    href: process.env.GITHUB_LINK, // Placeholder link, replace with the actual URL
+    href: "process.env.GITHUB_LINK", // Placeholder link, replace with the actual URL
     src: "github-icon.svg",
     target: "_blank",
   },
