@@ -1,4 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx lint-staged
+npx eslint . --fix
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint errors found. Commit aborted."
+  exit 1
+fi
