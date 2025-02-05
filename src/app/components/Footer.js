@@ -13,19 +13,19 @@ function Footer() {
         <div className="social my-6">
           <ul className="flex items-center justify-center">
             {socialLinks.map((item, index) => (
-              <li key={index} className="px-1">
+              <li className="px-1" key={index}>
                 <Link
                   aria-label={item.alt}
-                  className="md:w-16 md:h-16 w-10 h-10 border flex items-center justify-center rounded-full"
+                  className="md:w-12 md:h-12 w-10 h-10 border flex items-center justify-center rounded-full"
                   href={item.href}
                   target={item.target}
                 >
                   <Image
                     alt={item.alt}
-                    height={20}
+                    height={14}
                     priority
                     src={`/assets/${item.src}`}
-                    width={20}
+                    width={14}
                   />
                 </Link>
               </li>

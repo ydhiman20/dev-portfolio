@@ -54,7 +54,7 @@ module.exports = {
         "7xl": ["7rem", "7.5rem", "0.06em"], // Extra wide letter-spacing
       },
       fontFamily: {
-        sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
@@ -78,7 +78,7 @@ module.exports = {
             maxWidth: "768px",
           },
           "@screen xl": {
-            maxWidth: "1060px",
+            maxWidth: "900px",
           },
         },
       });

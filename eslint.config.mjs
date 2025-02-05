@@ -37,13 +37,11 @@ export default [
       "no-undef": "warn",
       "no-undef-init": "error",
       "no-unused-vars": "warn",
-
-      "perfectionist/sort-objects": [
-        "error",
-        {
-          type: "alphabetical",
-        },
-      ],
+      "perfectionist/sort-jsx-props": "error",
+      "perfectionist/sort-modules": "error",
+      "perfectionist/sort-named-imports": "error",
+      "prefer-arrow-callback": "error",
+      "prefer-const": "error",
       "react/jsx-uses-react": "error",
       "react/jsx-uses-vars": "error",
       semi: "error",

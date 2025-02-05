@@ -25,16 +25,16 @@ function Header() {
   };
 
   return (
-    <header className="py-4 px-4 md:px-0 backdrop-blur-xl sticky top-0 z-10 border-b border-gray-100 dark:border-[#282828]">
+    <header className="py-3 px-4 md:px-0 backdrop-blur-xl sticky top-0 z-10 ">
       {/* Navbar */}
       <nav className="navbar">
         <div className="container m-auto flex justify-between items-center text-2xl w-full">
           {/* Logo */}
-          <h1 className="w-16 md:w-24" id="logo">
+          <h1 className="w-12 md:w-14" id="logo">
             <Link href="/">
               <Image
                 alt="Logo"
-                className="hover:-rotate-45 transition-transform duration-500 drop-shadow-2xl"
+                className="hover:-rotate-45 transition-transform duration-500"
                 height="auto"
                 src={theme === "dark" ? darkLogo : lightLogo}
                 width="auto"
@@ -49,12 +49,12 @@ function Header() {
             }`}
           >
             {headerLinks.map((item, index) => (
-              <li key={index} className="font-semibold py-4 md:py-0">
+              <li className="font-semibold py-4 md:py-0" key={index}>
                 <Link
                   aria-label={item.alt}
                   className={`text-sm block mx-3 uppercase dark:text-white ${
                     index === headerLinks.length - 1
-                      ? "btn-theme-cta text-accent pr-8 pl-8 py-6 rounded-full block hover:bg-opacity-85"
+                      ? "btn-theme-cta text-accent pr-4 pl-4 py-3 rounded-full block hover:bg-opacity-85"
                       : ""
                   }`}
                   href={item.href}
@@ -63,7 +63,10 @@ function Header() {
                 >
                   {item.title}
                   {index === headerLinks.length - 1 && (
-                    <GoArrowRight className="ml-2 inline-block" size={20} />
+                    <GoArrowRight
+                      className="ml-2 -mt-1 inline-block"
+                      size={16}
+                    />
                   )}
                 </Link>
               </li>
