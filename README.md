@@ -3,7 +3,7 @@
 
 A modern developer portfolio showcasing projects, skills, and professional experience. [Live Demo](https://dev-portfolio-opal-five.vercel.app/)
 
-![Portfolio Screenshot](https://github.com/user-attachments/assets/b5193bd2-0460-49e2-b907-5d870e1be1db)
+![Image](https://github.com/user-attachments/assets/52395fd8-5a42-4f2a-9bb4-41845e18be03)
 
 ## 🌟 Overview
 Professional portfolio website featuring:
