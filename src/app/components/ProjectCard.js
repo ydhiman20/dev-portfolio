@@ -1,7 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 function ProjectCard({ index, item }) {
+  const handleProjectClick = (url, isJavaScript) => {
+    if (isJavaScript) {
+      alert("You’re already on this site! 🎉 Welcome back, rockstar! 🤩");
+    } else {
+      window.location.href = url;
+    }
+  };
   return (
     <>
       <div className="group relative overflow-hidden rounded-lg">
@@ -28,14 +37,12 @@ function ProjectCard({ index, item }) {
               <FaGithub size={22} />
             </Link>
 
-            <Link
-              className="w-10 h-10"
-              href={`${item.url}`}
-              size={30}
-              target="_blank"
+            <button
+              className="w-10 h-10 p-0 -mt-[10px]"
+              onClick={() => handleProjectClick(item.url, item.isJavaScript)}
             >
               <FaGlobe size={20} />
-            </Link>
+            </button>
           </div>
         </div>
       </div>

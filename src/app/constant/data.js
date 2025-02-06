@@ -74,13 +74,15 @@ export const projectData = [
     tech: ["react", "api", "weather app"],
     title: "WeatherWise",
     url: "https://weather-react-opal-nu.vercel.app/",
+    isJavaScript: false,
   },
   {
     githubLink: "https://github.com/ydhiman20/dev-portfolio",
     src: "portfolio.jpg",
     tech: ["javascript", "NextJs", "tawilwind"],
     title: "Portfolio",
-    url: "https://dev-portfolio-opal-five.vercel.app/",
+    url: "alert('You are already on this site! 🤩')",
+    isJavaScript: true,
   },
 ];
 
