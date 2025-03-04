@@ -22,16 +22,10 @@ module.exports = {
       },
       backgroundColor: {
         primary: "#000000", // Custom primary color (dark blue)
-        secondary: "#ffcd42", // Custom secondary color (amber)
-        accent: "#e879f9", // Custom accent color (teal)
       },
       colors: {
         ...colors,
-        primary: {
-          DEFAULT: "#000000", // Primary button base color (e.g., blue)
-          hover: "#ffcd42", // Darker shade for hover state
-          active: "#e879f9", // Even darker shade for active state
-        },
+        primary: {},
       },
       animation: {
         spin360: "spin360 1s linear infinite", // Custom animation for full-circle rotation
@@ -78,7 +72,7 @@ module.exports = {
             maxWidth: "768px",
           },
           "@screen xl": {
-            maxWidth: "900px",
+            maxWidth: "1200px",
           },
         },
       });

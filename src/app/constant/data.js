@@ -28,7 +28,7 @@ export const headerLinks = [
   },
   {
     alt: "Resume",
-    href: "https://docs.google.com/document/d/1_tXti08UIkA1QLYvWHRRd_zt08KV4QLfCwRY_INYKSU/edit?tab=t.0#heading=h.tzxy95a7f87c", // Placeholder link, replace with the actual URL
+    href: "https://drive.google.com/file/d/1Jks_qhuGLW_Onp9FrIFwNi3R9SqjbNrO/view", // Placeholder link, replace with the actual URL
     target: "_blank",
     title: "Resume",
   },
@@ -69,16 +69,86 @@ export const contactDetails = {
 
 export const projectData = [
   {
+    githubLink: "https://github.com/ydhiman20/",
+    isGithubLink: false,
+    src: "1.png",
+    tech: [
+      "React",
+      "NextJS",
+      "Performance Optimization",
+      "UX & Design Systems",
+      "Testing & Quality Assurance",
+      "Analytics & Tagging",
+      "WebPack",
+    ],
+    title: "Editorialist",
+    url: "https://editorialist.com/",
+    isJavaScript: false,
+  },
+  {
+    githubLink: "https://github.com/ydhiman20/",
+    isGithubLink: false,
+    src: "2.png",
+    tech: [
+      "wordpress",
+      "shopify",
+      "HTML",
+      "CSS",
+      "javascript",
+      "SEO",
+      "Analytics",
+    ],
+    title: "Procus go",
+    url: "https://procusgo.com/",
+    isJavaScript: false,
+  },
+  {
+    githubLink: "https://sattvayogaacademy.com/",
+    isGithubLink: false,
+    src: "3.png",
+    tech: [
+      "wordpress",
+      "HTML",
+      "CSS",
+      "javascript",
+      "SEO",
+      "Analytics",
+      "A/B testing",
+    ],
+    title: "Sattva Yoga Academy",
+    url: "https://sattvayogaacademy.com/",
+    isJavaScript: false,
+  },
+  {
+    githubLink: "https://sattvaconnect.com/",
+    isGithubLink: false,
+    src: "4.png",
+    tech: [
+      "joomla",
+      "HTML",
+      "CSS",
+      "javascript",
+      "SEO",
+      "Analytics",
+      "a/b testing",
+    ],
+    title: "SattvaConnect",
+    url: "https://sattvaconnect.com/",
+    isJavaScript: false,
+  },
+  {
     githubLink: "https://github.com/ydhiman20/weather-wise",
-    src: "weather.jpg",
-    tech: ["react", "api", "weather app"],
+    isGithubLink: true,
+    src: "5.png",
+    tech: ["react", "javascript", "HTML", "tailwind"],
     title: "WeatherWise",
     url: "https://weather-react-opal-nu.vercel.app/",
     isJavaScript: false,
   },
   {
     githubLink: "https://github.com/ydhiman20/dev-portfolio",
-    src: "portfolio.jpg",
+    isGithubLink: true,
+    src: "6.png",
     tech: ["javascript", "NextJs", "tawilwind"],
     title: "Portfolio",
     url: "alert('You are already on this site! 🤩')",
@@ -88,11 +158,11 @@ export const projectData = [
 
 export const TimeLineData = [
   {
-    duration: "Jul 2019 - Till",
+    duration: "Jul 2019 - Dec 2024",
     id: 0,
     org: "Editorialist",
-    skills: ["UI", "UX", "Next", "React", "Aanalytics Tools", "Wordpress"],
-    title: "Senior UI Specialist Engineer",
+    skills: ["UI", "UX", "Next", "React", "Analytics Tools", "Wordpress"],
+    title: "Senior UI Engineer",
   },
   {
     duration: "Feb 2013 - May 2019",
@@ -105,7 +175,7 @@ export const TimeLineData = [
       "Joomla",
       "Javascript",
       "Php",
-      "Aanalytics",
+      "AAnalytics",
     ],
     title: "Web designer/Developer",
   },
@@ -209,5 +279,7 @@ export const ABOUT_PAGE_CONTENT = {
   aboutSubHeading: "Little about me. Also, It's not that hard to find me.",
   techStackHeading: "Tech Stack",
   techStackSubHeading:
-    "Like many developers, I often find myself spending more time exploring and experimenting with tools than actually writing meaningful code.",
+    "A look at all the programming languages, libraries, and tools I've worked with.",
 };
+
+export const ABOUT_IMAGE = "desktop.png";

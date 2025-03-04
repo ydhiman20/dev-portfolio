@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Heading from "../components/Heading";
-import { ABOUT_PAGE_CONTENT, techSkills } from "../constant/data";
+import { ABOUT_IMAGE, ABOUT_PAGE_CONTENT, techSkills } from "../constant/data";
 
 function Page() {
   return (
@@ -15,9 +15,10 @@ function Page() {
 
         <Image
           alt="About Image"
-          className="m-auto block mt-8 grayscale"
+          className="m-auto block mt-8"
           height={400}
-          src="https://picsum.photos/800/400"
+          quality={100}
+          src={`/assets/${ABOUT_IMAGE}`}
           width={800}
         />
 
