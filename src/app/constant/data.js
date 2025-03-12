@@ -28,7 +28,7 @@ export const headerLinks = [
   },
   {
     alt: "Resume",
-    href: "https://drive.google.com/file/d/1Jks_qhuGLW_Onp9FrIFwNi3R9SqjbNrO/view", // Placeholder link, replace with the actual URL
+    href: "https://drive.google.com/file/d/1chGGqRGa_vN3yk6nQ3P0hZALtQeU5msC/view", // Placeholder link, replace with the actual URL
     target: "_blank",
     title: "Resume",
   },
